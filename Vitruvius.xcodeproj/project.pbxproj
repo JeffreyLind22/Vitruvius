@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FD42BAA62956AA1200C0FE82 /* VitruviusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD42BAA52956AA1200C0FE82 /* VitruviusApp.swift */; };
-		FD42BAA82956AA1200C0FE82 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD42BAA72956AA1200C0FE82 /* ContentView.swift */; };
+		FD42BAA82956AA1200C0FE82 /* VitruviusHomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD42BAA72956AA1200C0FE82 /* VitruviusHomePage.swift */; };
 		FD42BAAA2956AA1300C0FE82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD42BAA92956AA1300C0FE82 /* Assets.xcassets */; };
 		FD42BAAD2956AA1300C0FE82 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD42BAAC2956AA1300C0FE82 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		FD42BAA22956AA1200C0FE82 /* Vitruvius.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vitruvius.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD42BAA52956AA1200C0FE82 /* VitruviusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitruviusApp.swift; sourceTree = "<group>"; };
-		FD42BAA72956AA1200C0FE82 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FD42BAA72956AA1200C0FE82 /* VitruviusHomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitruviusHomePage.swift; sourceTree = "<group>"; };
 		FD42BAA92956AA1300C0FE82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD42BAAC2956AA1300C0FE82 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FD42BAAE2956AA1300C0FE82 /* Vitruvius.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Vitruvius.entitlements; sourceTree = "<group>"; };
@@ -53,7 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				FD42BAA52956AA1200C0FE82 /* VitruviusApp.swift */,
-				FD42BAA72956AA1200C0FE82 /* ContentView.swift */,
+				FD42BAA72956AA1200C0FE82 /* VitruviusHomePage.swift */,
 				FD42BAA92956AA1300C0FE82 /* Assets.xcassets */,
 				FD42BAAE2956AA1300C0FE82 /* Vitruvius.entitlements */,
 				FD42BAAB2956AA1300C0FE82 /* Preview Content */,
@@ -139,7 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD42BAA82956AA1200C0FE82 /* ContentView.swift in Sources */,
+				FD42BAA82956AA1200C0FE82 /* VitruviusHomePage.swift in Sources */,
 				FD42BAA62956AA1200C0FE82 /* VitruviusApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,23 +263,25 @@
 		FD42BAB22956AA1300C0FE82 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = VoltaireMacOSAppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = Vitruvius/Vitruvius.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Vitruvius/Preview Content\"";
 				DEVELOPMENT_TEAM = 7WRL3FUN4K;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Vitruvius;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = v0.0.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Voltaire.Vitruvius;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -290,23 +292,25 @@
 		FD42BAB32956AA1300C0FE82 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = VoltaireMacOSAppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = Vitruvius/Vitruvius.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Vitruvius/Preview Content\"";
 				DEVELOPMENT_TEAM = 7WRL3FUN4K;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Vitruvius;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = v0.0.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Voltaire.Vitruvius;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

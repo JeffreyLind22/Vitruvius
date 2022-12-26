@@ -2,13 +2,13 @@ import SwiftUI
 
 @main
 
-struct VitruviusApp: App {
+struct Vitruvius : App {
     
     var body: some Scene {
         
         WindowGroup {
             
-            ContentView()
+            VitruviusHomePage()
             
         }
     }
